@@ -75,7 +75,6 @@ a:visited {
 }
 
 a:hover {
-	/* border-bottom: 3px solid var(--light-green); */
 	text-decoration: underline solid var(--light-green) 5px;
 	text-underline-offset: 0.5em;
 }
@@ -104,6 +103,13 @@ li {
 	z-index: 20;
 }
 
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
 .nav-links {
 	display: flex;
 	flex-direction: row;
@@ -112,16 +118,13 @@ li {
 }
 
 .intro {
-	background-image: linear-gradient(
-			to bottom right,
-			rgba(0, 0, 0, 1) 0%,
-			rgba(0, 0, 0, 0.95) 30%,
-			rgba(0, 0, 0, 0.75)
-		),
-		url('https://scontent-sea1-1.xx.fbcdn.net/v/t31.18172-8/10604523_10203376582269909_8902007801844113836_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=HAmc_4hucrQAX-iLlfT&_nc_ht=scontent-sea1-1.xx&oh=00_AT9IhCyucaZxhKrT-3FJs_iry4Eezo8Wx-g4bYVS2XKxxA&oe=634A5696');
+	background: linear-gradient(135deg, #141b23 30%, #000000 100%);
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
+	margin: 50px 0;
+	padding: 50px;
+	gap: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -130,11 +133,11 @@ li {
 }
 
 .intro-left {
-	width: 550px;
+	width: 50em;
 }
 
 .intro-right {
-	width: 550px;
+	width: 50em;
 }
 
 .flex-row {
@@ -162,8 +165,8 @@ li {
 .projects {
 	height: auto;
 	width: 100%;
-	margin: 60px auto;
-	padding-top: 80px;
+	margin: 50px 0;
+	padding: 50px;
 	gap: 60px;
 	display: flex;
 	flex-direction: row;
@@ -223,11 +226,11 @@ li {
 }
 
 .footer-wrapper {
+	background: linear-gradient(135deg, #141b23 30%, #000000 100%);
 	height: auto;
 	width: 100%;
-	margin: 60px auto;
-	margin-top: 80px;
-	padding-top: 80px;
+	margin: 50px 0;
+	padding: 50px;
 	gap: 60px;
 	display: flex;
 	flex-direction: row;
@@ -257,11 +260,10 @@ li {
 	height: 80px;
 	width: 350px;
 	display: flex;
-	gap: 10px;
+	gap: 20px;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	text-align: right;
 }
 
 .location-left {
@@ -285,7 +287,7 @@ li {
 
 .footer-center i {
 	color: var(--light-green);
-	font-size: 4rem;
+	font-size: 2.7rem;
 }
 
 .footer-right {
@@ -305,8 +307,7 @@ li {
 }
 
 .footer-right i {
-	color: var(--light-green);
-	font-size: 4rem;
+	font-size: 3rem;
 	margin-top: 10px;
 }
 
@@ -316,6 +317,10 @@ li {
 
 .span-green {
 	color: var(--light-green);
+}
+
+.span-gray {
+	color: lightsteelblue;
 }
 
 .span-underline-green {
